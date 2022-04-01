@@ -1,4 +1,19 @@
-function Track({ image, judulLagu, albumName, artists }) {
+import React from 'react';
+import { useState } from 'react';
+
+function Track(status,pushToSelectedList,deleteFromSelectedList,id,image,judulLagu,albumName,artists) {
+
+    const [statusState,setStatusState] = useState(status)
+  
+    const showAlert = () => {
+        setStatusState(!statusState)
+        if (!statusState){
+            pushToSelectedList(id);
+        } else {
+            deleteFromSelectedList(id);
+        }
+    }
+  
   return (
       <div class="songs-item">
         <img className="album-image" 
@@ -13,9 +28,11 @@ function Track({ image, judulLagu, albumName, artists }) {
           <h3 className="text-album">{albumName}</h3>
         </div>
         <div className="button-actions">
-          <button type="btn-data" className="btn">
-            Select
-          </button>
+          if (statusState === false){
+            <button type="btn-data" className="btn" onClick={showAlert}>Select</button>
+          } else {
+            <button type="btn-data" className="btn" onClick={showAlert}>Deselect</button>
+            }
       </div>
   </div>
 );

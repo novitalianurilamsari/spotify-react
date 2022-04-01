@@ -8,8 +8,7 @@ function App() {
   const SPOTIFY_CLIENT_ID = "f445924d83704224a7bda9d74460c013"
   const REDIRECT_URI = "http://localhost:3000"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
-  const RESPONSE_TYPE = "token"
-  const SCOPES = 'playlist-modify-private';
+  const RESPONSE_TYPE = "token";
 
   const [token, setToken] = useState("")
   const [searchKey, setSearchKey] = useState("")
@@ -77,7 +76,7 @@ function App() {
 
         {!token ?
         
-            <a href={`${AUTH_ENDPOINT}?client_id=${SPOTIFY_CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPES}`}>Login
+            <a href={`${AUTH_ENDPOINT}?client_id=${SPOTIFY_CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}>Login
                 to Spotify</a>
                 
             : <button onClick={logout}>Logout</button>}

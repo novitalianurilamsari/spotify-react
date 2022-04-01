@@ -1,11 +1,12 @@
 import SongsItem from './SongsItem';
-import { SPOTIFY_DATA } from '../pages';
+import { SPOTIFY_DATA } from '../data';
 
 function SongsContainer() {
   /**
    * @returns 
    */
   function renderSongsItems() {
+    
     return SPOTIFY_DATA.map((item) => {
       const { id, album, name: judulLagu, artists } = item;
       return (
