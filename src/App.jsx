@@ -3,7 +3,6 @@ import {useEffect, useState} from "react";
 import './App.css';
 import axios from 'axios';
 
-//hi hiii
 
 function App() {
   const SPOTIFY_CLIENT_ID = "f445924d83704224a7bda9d74460c013"
