@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import tokenReducer from './token'
+import credentialReducer from "./credential-slice.js";
+import trackReducer from "./track-slice";
 
 export default configureStore({
-    reducer: {
-        token: tokenReducer
-    }
+  reducer: {
+    credential: credentialReducer,
+    track: trackReducer,
+  },
 });

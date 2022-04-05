@@ -5,10 +5,10 @@ function Track({ isSelected, track, onSelectTrack }) {
       <img
         className="playlist-image"
         src={album.images[0]?.url}
-        alt={songName}
+        alt={judulLagu}
       />
       <div className="playlist-content">
-        <h2 className="playlist-title">{songName}</h2>
+        <h2 className="playlist-title">{judulLagu}</h2>
         <h3 className="playlist-description text-truncate">
           {artists.map((artist) => artist.name).join(', ')}
         </h3>
