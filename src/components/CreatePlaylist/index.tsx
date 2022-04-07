@@ -77,3 +77,7 @@ CreatePlaylistForm.propTypes = {
     userId: PropTypes.string,
     selectedTracks: PropTypes.array,
 }
+
+function useSelector(arg0: (state: any) => any): { accessTokenBearer: any; } {
+    throw new Error('Function not implemented.');
+}
