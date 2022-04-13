@@ -1,6 +1,5 @@
 import React from "react";
 import { ButtonCompo } from "../../components";
-import { Button } from "../../components";
 import { API_SCOPE, REDIRECT_URI } from "../../config/constant";
 function Login() {
 
@@ -12,7 +11,6 @@ function Login() {
   return (
     <div className="SignIn">
       <ButtonCompo name="Login" link={linkURL} />
-      <Button />
     </div>
   );
 }

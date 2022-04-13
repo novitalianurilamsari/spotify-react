@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.title {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+.title2 {
+  text-align: left;
+  margin: 30px ;
+}
+/* Tittle */
+.title h1 {
+  color: #333;
+}
+.title span {
+  color: #1db954;
+}
+.title2 h2 {
+  font-size: 15px;
+  color: rgb(83, 83, 83);
+  margin-bottom: 10px;
+}
+
+.copyright {
+  text-align: center;
+  background-color: aliceblue;
+  height: auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

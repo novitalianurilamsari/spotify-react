@@ -3,8 +3,13 @@
     height: 40px;
     font-size: 14px;
     font-weight: bold;
-    color: #212121;
+    color: #1ed760;
     background-color: #ede7e3;
     border-radius: 8px;
-    border-color: #489fb5;
+    border-color: #1db954;
 }
+
+.buttonSelect:active {
+    position: relative;
+    box-shadow: none;
+  }

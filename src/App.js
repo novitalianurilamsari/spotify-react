@@ -8,7 +8,11 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className="title">Create Playlist<span>...</span></h1>
+      <h2 className="title2">now you can create your own playlist for free</h2>
+  
       <MyRouter />
+      <h4 className="copyright">Homework Modul 5 Sesi 1_KM-G2FE3045_Novita Lia NS</h4>
     </div>
   );
 }
