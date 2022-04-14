@@ -1,6 +1,7 @@
 import React from "react";
 import { ButtonCompo } from "../../components";
 import { API_SCOPE, REDIRECT_URI } from "../../config/constant";
+import ButtonCompo from '@mui/material/Button';
 function Login() {
 
   const linkURL = `https://accounts.spotify.com/en/authorize?client_id=${
@@ -10,7 +11,9 @@ function Login() {
 
   return (
     <div className="SignIn">
-      <ButtonCompo name="Login" link={linkURL} />
+      <ButtonCompo variant="contained" name="Login" href={linkURL}>
+  Login
+</ButtonCompo>
     </div>
   );
 }

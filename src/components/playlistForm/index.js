@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.css";
+import Button from '@mui/material/Button';
 
 function PlaylistForm({ titleValue, descValue, handleSubmit, onChange }) {
   return (
@@ -23,9 +24,9 @@ function PlaylistForm({ titleValue, descValue, handleSubmit, onChange }) {
           name="descPlaylist"
           minLength="20"
         />
-        <button className="CreateButton" type="submit">
+        <Button className="CreateButton" type="submit" color="primary">
           Create
-        </button>
+        </Button>
       </form>
     </div>
   );

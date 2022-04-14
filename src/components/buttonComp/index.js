@@ -1,25 +1,26 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import "./index.css";
+import {Button, Link} from '@mui/material/Button';
 
-function Button({ name, onClick, link }) {
+function ButtonCompo({ name, onClick, link }) {
   const [isSelected, setSelected] = useState(false);
 
   return (
     <div className="ButtonContainer">
-      <a href={link}>
-        <button
-          className="buttonSelect"
-          onClick={() => {
-            onClick();
-            setSelected(!isSelected);
-          }}
-        >
-          {isSelected ? "Deselect" : name}
-        </button>
-      </a>
+      <Link href={link}>
+      <Button
+        className="buttonSelect"
+        onClick={() => {
+        onClick();
+        setSelected(!isSelected);
+      }}
+      >
+        {isSelected ? "Deselect" : name}
+      </Button>
+      </Link>
     </div>
   );
 }
 
-export default Button;
+export default ButtonCompo;

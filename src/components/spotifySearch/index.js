@@ -5,6 +5,7 @@ import { SearchForm } from "..";
 import { useSelector } from "react-redux";
 import { SIGNIN_URL } from "../../config/constant";
 import "./index.css";
+import Button from '@mui/material/Button';
 
 function SpotifySearch({
   handleChange,
@@ -42,9 +43,9 @@ function SpotifySearch({
             Create Playlist
           </Link>
         ) : (
-          <button className="CreatePlaylistButton" onClick={handleAlert}>
+          <Button className="CreatePlaylistButton" onClick={handleAlert}>
             Create Playlist
-          </button>
+          </Button>
         )}
       </div>
     </div>
