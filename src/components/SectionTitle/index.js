@@ -7,7 +7,11 @@ function Header({ username }) {
 
   return (
     <div className="header d-flex justify-between">
-      <h1 className="text-center">Welcome {username?.split(' ')[0]}!</h1>
+      <h1 className="text-center">
+        Welcome
+        {username?.split(' ')[0]}
+        !
+      </h1>
       <button
         onClick={handleUnAuthSpotify}
         className="btn btn-danger"
