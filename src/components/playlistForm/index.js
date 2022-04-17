@@ -1,10 +1,8 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+import "./index.css";
 import Button from '@mui/material/Button';
 
-function PlaylistForm({
-  titleValue, descValue, handleSubmit, onChange,
-}) {
+function PlaylistForm({ titleValue, descValue, handleSubmit, onChange }) {
   return (
     <div className="PlaylistForm">
       <form onSubmit={handleSubmit}>

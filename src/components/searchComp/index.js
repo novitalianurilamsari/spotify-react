@@ -1,10 +1,8 @@
-import React from 'react';
+import React from "react";
 import './index.css';
 
 function SearchComp(props) {
-  const {
-    handleChange, handleClick, value, placeholder,
-  } = props;
+  const { handleChange, handleClick, value, placeholder } = props;
 
   return (
     <div className="search-comp">

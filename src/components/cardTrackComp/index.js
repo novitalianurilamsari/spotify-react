@@ -1,14 +1,12 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
-import { ButtonCompo } from '..';
+import React from "react";
+import { ButtonCompo } from "../../components";
 import './index.css';
 
-function CardTrackComp({
-  imgUrl, altImg, trackTitle, artistName, btnName, enableBtn, onClick,
-}) {
+function CardTrackComp({ imgUrl, altImg, trackTitle, artistName, btnName, enableBtn, onClick }) {
   return (
     <div className="cardTrack">
-      <img src={imgUrl} alt={altImg} className="albumImages" />
+      <img src={imgUrl} alt={altImg} className="albumImages"/>
       <div className="trackInfoWrapper">
         <h2 className="TrackTitleText">{trackTitle}</h2>
         <p className="ArtistText">{artistName}</p>
