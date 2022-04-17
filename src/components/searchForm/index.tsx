@@ -11,8 +11,7 @@ interface Props {
 
 function SearchForm(props: Props): ReactElement {
   return (
-    <form className="Form" onSubmit={props.handleSubmit}
-    >
+    <form className="Form" onSubmit={props.handleSubmit} >
     <input
       placeholder={props.placeholder}
       value={props.value}
